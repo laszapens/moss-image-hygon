@@ -1,0 +1,34 @@
+# Secrets and local state
+.env
+*.pass
+.dcu_pass*
+
+# Generated output
+gallery/
+out/
+*.png
+!docs/images/*.png
+*.json
+!requirements.json
+
+# Model weights (never commit these)
+*.safetensors
+*.ckpt
+*.bin
+*.pt
+models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv*/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log

@@ -1,0 +1,14 @@
+# Pinned to the versions that were actually used and verified on Hygon DCU.
+#
+# torch is NOT listed on purpose: the working install was the vendor build
+# `torch 2.7.1+das.opt1.dtk2604` that ships with the DTK toolchain image.
+# Installing a generic torch from PyPI will replace it and break the DCU path.
+# Install the vendor torch first, then the rest of this file.
+
+diffusers==0.43.0
+transformers==5.23.0
+accelerate>=1.10
+safetensors>=0.6
+Pillow>=10
+flask>=3.0
+modelscope>=1.20
