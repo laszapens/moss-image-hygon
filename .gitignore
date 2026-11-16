@@ -7,9 +7,10 @@
 gallery/
 out/
 *.png
-!docs/images/*.png
-*.json
-!requirements.json
+docs/images/*.png
+
+# Generation metadata written next to images by the UI
+*.gen.json
 
 # Model weights (never commit these)
 *.safetensors
